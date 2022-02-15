@@ -5,7 +5,7 @@ import xlrd
 import os
 sns.set_style("white")
 os.listdir(".")
-worksheet = xlrd.open_workbook('SODLRBLS_Manipulator_Node_Num.xls')
+worksheet = xlrd.open_workbook('SODLRBLS_Manipulator_Node_Num.xls.xls')
 sheet_names = worksheet.sheet_names()
 c1 = []
 for sheet_name in sheet_names:
@@ -40,7 +40,6 @@ episode9 = range(len(rewards9))
 episode10 = range(len(rewards10))
 episode = np.concatenate((episode1,episode2,episode3,episode4,episode5,episode6,episode7,episode8,episode9,episode10))
 sns.lineplot(x=episode,y=rewards)
-plt.legend('SODLRBLS', loc='upper right')
 plt.xlabel("Time(ms)")
 plt.ylabel("Number of the ramaining feature neuron")
 plt.show()
