@@ -8,7 +8,7 @@ error_old = 0;%old error vector
 derror = 0;%derivative of error
 ss = 0;%smc controller
 
-%%%%%%%%%%%%%%%%%%SODLRBLS参数%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%SODLRBLS parameters%%%%%%%%%%%%%%%%
 intput_num = 1;%input dimension
 output_num = 1;%output dimension
 fea_numi = 2;%the number of feature group
